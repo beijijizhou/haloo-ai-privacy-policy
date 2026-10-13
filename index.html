@@ -15,7 +15,7 @@
 
 <h2>What it handles</h2>
 <ul>
-  <li><b>The passcode</b> typed into the panel. It is kept in the browser and sent with each request to our service to show that the user is authorised.</li>
+  <li><b>Who is signed in</b>. The user signs in on our own page with a name and a password the shop set up; the password is typed there and never passes through the extension. The page hands the extension a session token and the user's name, which are kept in the browser and sent with each request to our service to show that the user is authorised. (A passcode typed into the panel by an earlier version is kept and used the same way.)</li>
   <li><b>A name for the computer</b>, which the user may change, so that results can be told apart by machine.</li>
   <li><b>Product information from the Temu pages the user runs it on</b>: product id, title, main picture address, price, number sold, and the address of the list page. Only on pages where the user presses the button, or lists the extension opens to go on with the same job.</li>
   <li><b>Miaoshou ERP information of the signed-in account</b>: the account's name, the shops it can publish to, the products in its collect boxes and their publishing record. The extension acts in Miaoshou with the login already in the browser; it never sees or stores the Miaoshou password.</li>
